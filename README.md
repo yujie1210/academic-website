@@ -68,5 +68,5 @@ This site can be deployed to GitHub Pages, Netlify, Vercel, or a university serv
 Suggested GitHub Pages URL:
 
 ```text
-https://yujiefan2000.github.io/academic-website/
+https://yujie1210.github.io/academic-website/
 ```

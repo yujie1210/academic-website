@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yujiefan2000.github.io/academic-website/sitemap.xml
+Sitemap: https://yujie1210.github.io/academic-website/sitemap.xml
