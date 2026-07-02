@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yujie Fan (Nichole), PhD candidate in Economics at Nanyang Technological University.">
+    <meta property="og:title" content="Yujie Fan | Economics PhD Candidate">
+    <meta property="og:description" content="Yujie Fan (Nichole), PhD candidate in Economics at Nanyang Technological University. Research in experimental economics, machine learning applications, and human-AI interaction.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/yujie-fan-portrait.jpg">
+    <title>Yujie Fan | Economics PhD Candidate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="#home" aria-label="Yujie Fan home">
+        <span class="brand-mark">YF</span>
+        <span>Yujie Fan</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#conferences">Conferences</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <div class="hero-content">
+            <p class="eyebrow" data-field="person.affiliation"></p>
+            <h1 data-field="person.name"></h1>
+            <p class="role" data-field="person.role"></p>
+            <p class="intro" data-rich-field="person.bioHtml"></p>
+            <div class="hero-actions">
+              <a class="button primary" href="#research">View research</a>
+              <a class="button secondary" data-field-href="person.cv" href="assets/Yujie-Fan-CV.pdf">Download CV</a>
+            </div>
+          </div>
+          <figure class="hero-portrait">
+            <img src="assets/yujie-fan-portrait.jpg" alt="Portrait of Yujie Fan">
+          </figure>
+        </div>
+      </section>
+
+      <section class="section research-section" id="research">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2>Experimental economics, machine learning, and human-AI interaction.</h2>
+        </div>
+        <div class="research-panel emphasized">
+          <h3>Ongoing Projects</h3>
+          <div class="project-list" data-list="projects"></div>
+        </div>
+      </section>
+
+      <section class="section" id="publications">
+        <div class="section-heading">
+          <p class="eyebrow">Writing</p>
+          <h2>Publications and Working Papers</h2>
+        </div>
+        <div class="publication-list" data-list="publications"></div>
+      </section>
+
+      <section class="section band" id="conferences">
+        <div class="section-heading">
+          <p class="eyebrow">Academic Events</p>
+          <h2>Conferences and Seminars</h2>
+        </div>
+        <div class="conference-list" data-list="conferences"></div>
+      </section>
+
+      <section class="section" id="teaching">
+        <div class="section-heading">
+          <p class="eyebrow">Teaching</p>
+          <h2>Teaching Assistant Experience</h2>
+        </div>
+        <div class="timeline" data-list="teaching"></div>
+      </section>
+
+      <section class="section band" id="education">
+        <div class="section-heading">
+          <p class="eyebrow">Background</p>
+          <h2>Education</h2>
+        </div>
+        <div class="education-grid" data-list="education"></div>
+      </section>
+
+      <section class="section band" id="service">
+        <div class="section-heading">
+          <p class="eyebrow">Community</p>
+          <h2>Service and Activities</h2>
+        </div>
+        <div class="activity-grid" data-list="activities"></div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Open to research and teaching conversations.</h2>
+        </div>
+        <div class="contact-card">
+          <a data-field-href="person.emailHref" data-field="person.email"></a>
+          <a data-field-href="person.linkedinHref" data-field="person.linkedin"></a>
+          <span data-field="person.location"></span>
+          <a data-field-href="person.cv" href="assets/Yujie-Fan-CV.pdf">Curriculum Vitae</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Yujie Fan.</span>
+      <span>Built as a maintainable static academic website.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

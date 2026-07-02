@@ -1,0 +1,204 @@
+{
+  "person": {
+    "name": "Fan Yujie (Nichole)",
+    "role": "PhD Candidate in Economics",
+    "affiliation": "School of Social Sciences, Nanyang Technological University",
+    "location": "Singapore",
+    "email": "yujie005@e.ntu.edu.sg",
+    "emailHref": "mailto:yujie005@e.ntu.edu.sg",
+    "linkedin": "LinkedIn",
+    "linkedinHref": "https://www.linkedin.com/in/yujiefan2000",
+    "cv": "assets/Yujie-Fan-CV.pdf",
+    "bio": "I am a PhD candidate in Economics at Nanyang Technological University, supervised by Associate Professor Wang Wenjie and co-supervised by Professor Yohanes Eko Riyanto. My research interests sit at the intersection of experimental economics, machine learning applications, and human-AI interaction, with ongoing work on matching in two-sided markets and human-AI interaction in teams. I am also actively involved in undergraduate teaching in economics and econometrics.",
+    "bioHtml": "I am a PhD candidate in Economics at Nanyang Technological University, supervised by <a href=\"https://sites.google.com/site/wenjiemetrics/home\" target=\"_blank\" rel=\"noopener\">Associate Professor Wang Wenjie</a> and co-supervised by <a href=\"https://eko-ntu.github.io/\" target=\"_blank\" rel=\"noopener\">Professor Yohanes Eko Riyanto</a>. My research interests sit at the intersection of experimental economics, machine learning applications, and human-AI interaction, with ongoing work on matching in two-sided markets and human-AI interaction in teams. I am also actively involved in undergraduate teaching in economics and econometrics."
+  },
+  "interests": [
+    {
+      "title": "Experimental Economics",
+      "description": "Designing and analyzing behavioral mechanisms in controlled economic settings, with attention to incentives, matching, and strategic interaction."
+    },
+    {
+      "title": "Machine Learning Applications",
+      "description": "Using computational tools to support empirical economic research, prediction, classification, and heterogeneity analysis."
+    },
+    {
+      "title": "Human-AI Interaction",
+      "description": "Studying how AI systems shape collaboration, decision-making, productivity, and team dynamics."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Matching in Two-Sided Markets",
+      "status": "Ongoing"
+    },
+    {
+      "title": "AI in Teamwork",
+      "status": "Ongoing",
+      "description": "This project investigates how AI integration modulates team dynamics and performance across both flat (leaderless) and hierarchical (leader-led) organizational structures. In leaderless settings, the research evaluates the impact of AI on collective output and individual member confidence, specifically examining whether the introduction of AI obscures the star effect typically driven by consistently high-performing individuals. Within the leadership framework, the study examines how the sophistication of AI assistance, ranging from standard AI and certainty AI to personalized AI, interacts with the method of leader selection. By comparing teams with self-promoted versus randomly assigned leaders, the project analyzes how leadership legitimacy and AI modality jointly influence team outcomes and decision-making efficacy."
+    }
+  ],
+  "teaching": [
+    {
+      "term": "2024-25 S2",
+      "course": "HE5091 Principle of Economics",
+      "load": "4 tutorial groups, 4 x 12 weeks"
+    },
+    {
+      "term": "2025-26 S1",
+      "course": "HE1001 Microeconomics",
+      "load": "3 tutorial groups, 3 x 12 weeks"
+    },
+    {
+      "term": "2025-26 S1",
+      "course": "HE2003 Econometrics I",
+      "load": "3 tutorial groups, 3 x 12 weeks"
+    },
+    {
+      "term": "2025-26 S2",
+      "course": "HE5091 Principle of Economics",
+      "load": "6 tutorial groups, 6 x 12 weeks"
+    },
+    {
+      "term": "2026-27 S1",
+      "course": "HE2003 Econometrics I",
+      "load": "Teaching Assistant"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Health Inequality and Health Types: Evidence from China",
+      "authors": "Yujie Fan, Zhuoru Ma, Akshar Saxena, Wenjie Wang",
+      "year": "Working paper",
+      "venue": "Working paper",
+      "abstract": "China's rapidly aging population faces substantial health inequality, yet we lack systematic evidence on how individual health evolves differently across midlife and into old age. Understanding these trajectories matters for pension sustainability, healthcare demand, and targeting of social protection. Using data from the China Health and Retirement Longitudinal Study (CHARLS), we apply K-means clustering to identify distinct health trajectory types based on frailty index evolution over ten years. We find five distinct patterns between ages 46-56, which differ sharply in both initial health and deterioration rates. Individuals with similar baseline health can follow diverging paths - some remain stable while others decline rapidly. By age 66-76, these patterns converge into three types, suggesting health trajectories become more homogeneous with age. Trajectory types identified from waves 1-4 predict wave 5 health outcomes substantially better than demographic characteristics alone, indicating persistent unobserved heterogeneity in health dynamics. We examine whether such health type heterogeneity exists in the Chinese context, where rapid economic development and healthcare expansion create a unique environment for studying health dynamics. China's experience may offer insights for other middle-income countries undergoing similar transitions."
+    }
+  ],
+  "conferences": [
+    {
+      "title": "The First Camphor Economics Seminar (Ningbo) and 2025 Annual Meeting of the Centre for Health Economics",
+      "location": "University of Nottingham Ningbo China, Ningbo, China",
+      "date": "June 15, 2025",
+      "link": "http://conferences.help/Home/Conference?id=5955&previewType=LookType"
+    },
+    {
+      "title": "2025 Chinese Economists Society (CES) China Annual Conference",
+      "location": "Sun Yat-sen University, Guangzhou, China",
+      "date": "2025",
+      "link": "https://www.china-ces.org/Conferences/ConferenceDefault.aspx?ID=3059"
+    }
+  ],
+  "education": [
+    {
+      "title": "PhD in Economics",
+      "place": "Nanyang Technological University, Singapore",
+      "period": "Aug 2024 - Aug 2028 expected",
+      "details": [
+        {
+          "label": "Supervisor",
+          "value": "Associate Professor Wang Wenjie"
+        },
+        {
+          "label": "Co-supervisor",
+          "value": "Professor Yohanes Eko Riyanto"
+        },
+        {
+          "label": "Service",
+          "value": "Graduate Student Committee sub-committee member, 2025-2026"
+        }
+      ]
+    },
+    {
+      "title": "MPhil in Economics",
+      "place": "University of Cambridge, United Kingdom",
+      "period": "Sep 2023 - Jul 2024",
+      "details": [
+        {
+          "label": "College",
+          "value": "St Catharine's College"
+        },
+        {
+          "label": "Coursework paper",
+          "value": "Inequality in Nutrition: A Quantitative Analysis"
+        }
+      ],
+      "tags": [
+        "Econometrics",
+        "Microeconomics",
+        "Macroeconomics",
+        "Development Economics",
+        "Industrial Organization",
+        "International Trade",
+        "Applied Econometrics"
+      ]
+    },
+    {
+      "title": "BSc (Hons) Economics",
+      "place": "University of Nottingham Ningbo China",
+      "period": "Sep 2019 - Jul 2023",
+      "details": [
+        {
+          "label": "Honours",
+          "value": "First Class Distinction with Honours"
+        },
+        {
+          "label": "Dissertation",
+          "value": "Is There Discrimination in U.S. Criminal Law Sentencing? A Quantitative Examination Based on Non-linear Oaxaca Decomposition"
+        },
+        {
+          "label": "Supervisor",
+          "value": "Chair Professor Zhuo (Adam) Chen"
+        }
+      ],
+      "tags": [
+        "Econometrics II",
+        "Microeconometrics Methods",
+        "Advanced Macroeconomics",
+        "Topics in Time Series",
+        "Numerical Methods",
+        "Intermediate Mathematical Economics",
+        "International Trade",
+        "Advanced Health Economics"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Health Types and Health Dynamics Identification",
+      "place": "Nanyang Technological University",
+      "period": "Nov 2024 - Present",
+      "description": "Project with Professor Wenjie Wang, Professor Akshar Saxena, and Zhuoru Ma."
+    },
+    {
+      "title": "Quantitative Examination on Discrimination in U.S. Criminal Law Sentencing",
+      "place": "University of Nottingham Ningbo China",
+      "period": "Sep 2022 - Apr 2023",
+      "description": "Undergraduate dissertation using empirical methods to examine discrimination in criminal law sentencing."
+    },
+    {
+      "title": "Econometric Model Simulation and Research Assistance",
+      "place": "University of Nottingham Ningbo China",
+      "period": "2021 - 2022",
+      "description": "Research assistant experience involving MATLAB simulation, Python data access, STATA analysis, and empirical projects in energy, health, and financial economics."
+    }
+  ],
+  "activities": [
+    {
+      "title": "Graduate Student Committee",
+      "place": "Nanyang Technological University",
+      "period": "2025 - 2026",
+      "description": "Sub-committee member representing and supporting graduate student community activities."
+    },
+    {
+      "title": "Table Tennis",
+      "place": "University of Cambridge",
+      "period": "2023 - 2024",
+      "description": "Women's first team member. Participated in Varsity vs. Oxford 2024."
+    },
+    {
+      "title": "Student Leadership and Music",
+      "place": "University of Nottingham Ningbo China",
+      "period": "2019 - 2023",
+      "description": "Table tennis excel team member and Chinese orchestra team leader."
+    }
+  ]
+}
