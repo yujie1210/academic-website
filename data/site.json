@@ -68,8 +68,8 @@
     {
       "title": "Health Inequality and Health Types: Evidence from China",
       "authors": "Yujie Fan, Zhuoru Ma, Akshar Saxena, Wenjie Wang",
-      "year": "Working paper",
-      "venue": "Working paper",
+      "year": "",
+      "venue": "",
       "abstract": "China's rapidly aging population faces substantial health inequality, yet we lack systematic evidence on how individual health evolves differently across midlife and into old age. Understanding these trajectories matters for pension sustainability, healthcare demand, and targeting of social protection. Using data from the China Health and Retirement Longitudinal Study (CHARLS), we apply K-means clustering to identify distinct health trajectory types based on frailty index evolution over ten years. We find five distinct patterns between ages 46-56, which differ sharply in both initial health and deterioration rates. Individuals with similar baseline health can follow diverging paths - some remain stable while others decline rapidly. By age 66-76, these patterns converge into three types, suggesting health trajectories become more homogeneous with age. Trajectory types identified from waves 1-4 predict wave 5 health outcomes substantially better than demographic characteristics alone, indicating persistent unobserved heterogeneity in health dynamics. We examine whether such health type heterogeneity exists in the Chinese context, where rapid economic development and healthcare expansion create a unique environment for studying health dynamics. China's experience may offer insights for other middle-income countries undergoing similar transitions."
     }
   ],
