@@ -67,8 +67,8 @@ const renderPublications = (items) => {
     .map((item) => `
       <article class="publication-card">
         <h3>${item.title}</h3>
-        <span class="meta">${item.authors} · ${item.year}</span>
-        <p>${item.venue}</p>
+        <span class="meta">${item.authors}</span>
+        ${item.venue ? `<p>${item.venue}</p>` : ""}
         ${item.abstract ? `
           <div class="abstract-details">
             <span>Abstract</span>
