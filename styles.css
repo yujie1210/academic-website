@@ -323,7 +323,7 @@ code {
 }
 
 .abstract-details p {
-  max-width: 860px;
+  max-width: none;
 }
 
 .detail-list {
