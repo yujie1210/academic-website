@@ -57,7 +57,7 @@ const renderPublications = (items) => {
   if (!items.length) {
     return `
       <article class="publication-card">
-        <h3>Working papers coming soon</h3>
+        <h3>Research outputs coming soon</h3>
         <p>Formal titles, author order, abstracts, and links can be added as the projects mature.</p>
       </article>
     `;
