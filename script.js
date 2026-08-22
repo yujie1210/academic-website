@@ -187,7 +187,12 @@ const initNav = () => {
 initNav();
 document.getElementById("year").textContent = new Date().getFullYear();
 
-fetch("data/site.json")
+// GitHub Pages serves site.json with max-age=600, so without a version tag a
+// content edit can take up to 10 minutes to appear even after a hard refresh.
+// Tie the data URL to the same version stamp as this script.
+const DATA_VERSION = (document.currentScript?.src.split("v=")[1]) || Date.now();
+
+fetch(`data/site.json?v=${DATA_VERSION}`)
   .then((response) => {
     if (!response.ok) throw new Error(`site.json returned HTTP ${response.status}`);
     return response.json();
