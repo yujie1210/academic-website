@@ -1,6 +1,6 @@
 {
   "person": {
-    "name": "Fan Yujie (Nichole)",
+    "name": "Yujie Fan (Nichole)",
     "role": "PhD Candidate in Economics",
     "affiliation": "School of Social Sciences, Nanyang Technological University",
     "location": "Singapore",
@@ -38,19 +38,9 @@
   ],
   "teaching": [
     {
-      "term": "2024-25 S2",
-      "course": "HE5091 Principle of Economics",
-      "load": "4 tutorial groups, 4 x 12 weeks"
-    },
-    {
-      "term": "2025-26 S1",
-      "course": "HE1001 Microeconomics",
-      "load": "3 tutorial groups, 3 x 12 weeks"
-    },
-    {
-      "term": "2025-26 S1",
+      "term": "2026-27 S1",
       "course": "HE2003 Econometrics I",
-      "load": "3 tutorial groups, 3 x 12 weeks"
+      "load": "4 tutorial groups, 4 x 12 weeks"
     },
     {
       "term": "2025-26 S2",
@@ -58,9 +48,19 @@
       "load": "6 tutorial groups, 6 x 12 weeks"
     },
     {
-      "term": "2026-27 S1",
+      "term": "2025-26 S1",
       "course": "HE2003 Econometrics I",
-      "load": "Teaching Assistant"
+      "load": "3 tutorial groups, 3 x 12 weeks"
+    },
+    {
+      "term": "2025-26 S1",
+      "course": "HE1001 Microeconomics",
+      "load": "3 tutorial groups, 3 x 12 weeks"
+    },
+    {
+      "term": "2024-25 S2",
+      "course": "HE5091 Principle of Economics",
+      "load": "4 tutorial groups, 4 x 12 weeks"
     }
   ],
   "publications": [
