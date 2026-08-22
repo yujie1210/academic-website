@@ -38,29 +38,24 @@
   ],
   "teaching": [
     {
-      "term": "2026-27 S1",
-      "course": "HE2003 Econometrics I",
-      "load": "4 tutorial groups, 4 x 12 weeks"
-    },
-    {
-      "term": "2025-26 S2",
       "course": "HE5091 Principle of Economics",
-      "load": "6 tutorial groups, 6 x 12 weeks"
+      "terms": [
+        "2024-25 S2 — 4 tutorial groups x 12 weeks",
+        "2025-26 S2 — 6 tutorial groups x 12 weeks"
+      ]
     },
     {
-      "term": "2025-26 S1",
-      "course": "HE2003 Econometrics I",
-      "load": "3 tutorial groups, 3 x 12 weeks"
-    },
-    {
-      "term": "2025-26 S1",
       "course": "HE1001 Microeconomics",
-      "load": "3 tutorial groups, 3 x 12 weeks"
+      "terms": [
+        "2025-26 S1 — 3 tutorial groups x 12 weeks"
+      ]
     },
     {
-      "term": "2024-25 S2",
-      "course": "HE5091 Principle of Economics",
-      "load": "4 tutorial groups, 4 x 12 weeks"
+      "course": "HE2003 Econometrics I",
+      "terms": [
+        "2025-26 S1 — 3 tutorial groups x 12 weeks",
+        "2026-27 S1 — 4 tutorial groups x 12 weeks"
+      ]
     }
   ],
   "publications": [
@@ -102,7 +97,7 @@
         },
         {
           "label": "Service",
-          "value": "Graduate Student Committee sub-committee member, 2025-2026"
+          "value": "Subject Representative (Economics), 2026-present; Graduate Student Committee sub-committee member, 2025-2026"
         }
       ]
     },

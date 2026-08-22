@@ -704,3 +704,26 @@ code {
     width: 100%;
   }
 }
+
+.teaching-row {
+  background: rgba(255, 253, 248, 0.68);
+  border: 1px solid rgba(220, 202, 184, 0.84);
+  border-radius: 8px;
+  padding: 18px 20px;
+}
+
+.teaching-row .course {
+  font-size: 1.05rem;
+  margin: 0 0 8px;
+}
+
+.term-list {
+  color: var(--muted);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.term-list li {
+  padding: 2px 0;
+}

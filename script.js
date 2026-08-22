@@ -56,14 +56,29 @@ const renderProjects = (items) => items
   `)
   .join("");
 
+// Grouped by course: one row per course, with each term it was taught listed
+// underneath. Falls back to the older flat {term, course, load} shape so an
+// out-of-date site.json still renders.
 const renderTeaching = (items) => items
-  .map((item) => `
-    <article class="timeline-row">
-      <span class="term">${esc(item.term)}</span>
-      <span class="course">${esc(item.course)}</span>
-      <span class="load">${esc(item.load)}</span>
-    </article>
-  `)
+  .map((item) => {
+    if (item.terms) {
+      return `
+        <article class="teaching-row">
+          <h3 class="course">${esc(item.course)}</h3>
+          <ul class="term-list">
+            ${item.terms.map((t) => `<li>${esc(t)}</li>`).join("")}
+          </ul>
+        </article>
+      `;
+    }
+    return `
+      <article class="timeline-row">
+        <span class="term">${esc(item.term)}</span>
+        <span class="course">${esc(item.course)}</span>
+        <span class="load">${esc(item.load)}</span>
+      </article>
+    `;
+  })
   .join("");
 
 const renderPublications = (items) => {
