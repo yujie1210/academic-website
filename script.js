@@ -1,6 +1,19 @@
 const getValue = (source, path) =>
   path.split(".").reduce((value, key) => (value ? value[key] : ""), source);
 
+// Escape before interpolating into innerHTML. The data in site.json is
+// author-controlled, so this is defence-in-depth rather than a fix for a live
+// hole -- but it keeps the templates safe if content is ever pulled from an
+// external source, and stops stray &, <, > from breaking the markup.
+// person.bioHtml is deliberately exempt: it carries intentional <a> markup.
+const esc = (value) =>
+  String(value == null ? "" : value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+
 const setTextFields = (data) => {
   document.querySelectorAll("[data-field]").forEach((element) => {
     const value = getValue(data, element.dataset.field);
@@ -21,8 +34,8 @@ const setTextFields = (data) => {
 const renderInterests = (items) => items
   .map((item) => `
     <article class="interest-card">
-      <h3>${item.title}</h3>
-      <p>${item.description}</p>
+      <h3>${esc(item.title)}</h3>
+      <p>${esc(item.description)}</p>
     </article>
   `)
   .join("");
@@ -31,12 +44,12 @@ const renderProjects = (items) => items
   .map((item, index) => `
     <article class="project-card">
       <span class="project-index">${String(index + 1).padStart(2, "0")}</span>
-      <h3>${item.title}</h3>
-      <span class="meta">${item.status}</span>
+      <h3>${esc(item.title)}</h3>
+      <span class="meta">${esc(item.status)}</span>
       ${item.description ? `
         <div class="project-abstract">
           <span>Abstract</span>
-          <p>${item.description}</p>
+          <p>${esc(item.description)}</p>
         </div>
       ` : ""}
     </article>
@@ -46,9 +59,9 @@ const renderProjects = (items) => items
 const renderTeaching = (items) => items
   .map((item) => `
     <article class="timeline-row">
-      <span class="term">${item.term}</span>
-      <span class="course">${item.course}</span>
-      <span class="load">${item.load}</span>
+      <span class="term">${esc(item.term)}</span>
+      <span class="course">${esc(item.course)}</span>
+      <span class="load">${esc(item.load)}</span>
     </article>
   `)
   .join("");
@@ -66,13 +79,13 @@ const renderPublications = (items) => {
   return items
     .map((item) => `
       <article class="publication-card">
-        <h3>${item.title}</h3>
-        <span class="meta">${item.authors}</span>
-        ${item.venue ? `<p>${item.venue}</p>` : ""}
+        <h3>${esc(item.title)}</h3>
+        <span class="meta">${esc(item.authors)}</span>
+        ${item.venue ? `<p>${esc(item.venue)}</p>` : ""}
         ${item.abstract ? `
           <div class="abstract-details">
             <span>Abstract</span>
-            <p>${item.abstract}</p>
+            <p>${esc(item.abstract)}</p>
           </div>
         ` : ""}
       </article>
@@ -84,8 +97,8 @@ const renderConferences = (items) => items
   .map((item) => `
     <article class="conference-row">
       <div>
-        <h3>${item.title}</h3>
-        <span class="meta">${item.location} · ${item.date}</span>
+        <h3>${esc(item.title)}</h3>
+        <span class="meta">${esc(item.location)} · ${esc(item.date)}</span>
       </div>
     </article>
   `)
@@ -94,15 +107,15 @@ const renderConferences = (items) => items
 const renderEntries = (items) => items
   .map((item) => `
     <article class="entry">
-      <h3>${item.title}</h3>
-      <span class="meta">${item.place} · ${item.period}</span>
-      ${item.description ? `<p>${item.description}</p>` : ""}
+      <h3>${esc(item.title)}</h3>
+      <span class="meta">${esc(item.place)} · ${esc(item.period)}</span>
+      ${item.description ? `<p>${esc(item.description)}</p>` : ""}
       ${item.details ? `
         <dl class="detail-list">
           ${item.details.map((detail) => `
             <div>
-              <dt>${detail.label}</dt>
-              <dd>${detail.value}</dd>
+              <dt>${esc(detail.label)}</dt>
+              <dd>${esc(detail.value)}</dd>
             </div>
           `).join("")}
         </dl>
@@ -111,7 +124,7 @@ const renderEntries = (items) => items
         <div class="coursework-list" aria-label="Selected coursework">
           <span>Selected coursework</span>
           <ul>
-            ${item.tags.map((tag) => `<li>${tag}</li>`).join("")}
+            ${item.tags.map((tag) => `<li>${esc(tag)}</li>`).join("")}
           </ul>
         </div>
       ` : ""}
@@ -140,27 +153,33 @@ const renderLists = (data) => {
 const initNav = () => {
   const button = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".site-nav");
+  if (!button || !nav) return;
 
-  button.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("open");
+  const setOpen = (isOpen) => {
+    nav.classList.toggle("open", isOpen);
     button.setAttribute("aria-expanded", String(isOpen));
-  });
+    button.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+  };
 
+  button.addEventListener("click", () => setOpen(!nav.classList.contains("open")));
   nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("open");
-      button.setAttribute("aria-expanded", "false");
-    });
+    link.addEventListener("click", () => setOpen(false));
   });
 };
 
+// Navigation and the year stamp must not depend on the data fetch succeeding --
+// otherwise a failed/slow site.json leaves the mobile menu button dead.
+initNav();
+document.getElementById("year").textContent = new Date().getFullYear();
+
 fetch("data/site.json")
-  .then((response) => response.json())
+  .then((response) => {
+    if (!response.ok) throw new Error(`site.json returned HTTP ${response.status}`);
+    return response.json();
+  })
   .then((data) => {
     setTextFields(data);
     renderLists(data);
-    document.getElementById("year").textContent = new Date().getFullYear();
-    initNav();
   })
   .catch((error) => {
     console.error("Failed to load site data:", error);
