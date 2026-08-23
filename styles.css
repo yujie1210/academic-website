@@ -304,62 +304,6 @@ code {
   max-width: none;
 }
 
-.detail-list {
-  border-top: 1px solid rgba(220, 202, 184, 0.78);
-  display: grid;
-  gap: 10px;
-  margin: 16px 0 0;
-  padding: 14px 0 0;
-}
-
-.detail-list div {
-  display: grid;
-  gap: 4px;
-}
-
-.detail-list dt {
-  color: var(--copper);
-  font-size: 0.75rem;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.detail-list dd {
-  color: var(--charcoal);
-  font-weight: 600;
-  margin: 0;
-}
-
-.coursework-list {
-  border-top: 1px solid rgba(220, 202, 184, 0.78);
-  margin-top: 16px;
-  padding-top: 14px;
-}
-
-.coursework-list > span {
-  color: var(--coffee);
-  display: block;
-  font-size: 0.78rem;
-  font-weight: 800;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-}
-
-.coursework-list ul {
-  color: var(--muted);
-  columns: 2;
-  column-gap: 34px;
-  list-style-position: inside;
-  margin: 0;
-  padding: 0;
-}
-
-.coursework-list li {
-  break-inside: avoid;
-  font-weight: 700;
-  margin: 2px 0;
-}
-
 .research-section {
   max-width: 1180px;
 }
@@ -384,15 +328,6 @@ code {
 .activity-grid {
   display: grid;
   gap: 16px;
-}
-
-.research-grid,
-.education-grid {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.education-grid {
-  grid-template-columns: 1fr;
 }
 
 .project-list {
@@ -456,23 +391,6 @@ code {
   margin: 0;
 }
 
-.research-grid .entry {
-  box-shadow: none;
-  display: grid;
-  gap: 4px 22px;
-  grid-template-columns: minmax(150px, 0.28fr) minmax(0, 1fr);
-  padding: 18px 0;
-  border: 0;
-  border-bottom: 1px solid rgba(220, 202, 184, 0.78);
-  border-radius: 0;
-  background: transparent;
-}
-
-.research-grid .entry h3,
-.research-grid .entry p {
-  grid-column: 2;
-}
-
 .research-grid .entry .meta {
   grid-column: 1;
   grid-row: 1 / span 2;
@@ -500,11 +418,6 @@ code {
   max-width: var(--max);
 }
 
-.timeline {
-  display: grid;
-  gap: 10px;
-}
-
 .conference-list {
   display: grid;
   gap: 12px;
@@ -516,31 +429,6 @@ code {
   border: 1px solid rgba(220, 202, 184, 0.84);
   border-radius: 8px;
   padding: 18px;
-}
-
-.timeline-row {
-  align-items: center;
-  background: rgba(255, 253, 248, 0.68);
-  border: 1px solid rgba(220, 202, 184, 0.84);
-  border-radius: 8px;
-  display: grid;
-  gap: 14px;
-  grid-template-columns: 120px 1fr auto;
-  padding: 16px 18px;
-}
-
-.term {
-  color: var(--coffee);
-  font-weight: 800;
-}
-
-.course {
-  font-weight: 700;
-}
-
-.load {
-  color: var(--muted);
-  white-space: nowrap;
 }
 
 .contact {
@@ -629,10 +517,6 @@ code {
     grid-template-columns: 1fr;
   }
 
-  .research-grid .entry {
-    grid-template-columns: 1fr;
-  }
-
   .research-grid .entry h3,
   .research-grid .entry p,
   .research-grid .entry .meta {
@@ -669,22 +553,9 @@ code {
     grid-row: 1 / span 3;
   }
 
-  .timeline-row {
-    align-items: start;
-    grid-template-columns: 1fr;
-  }
-
   .conference-row {
     align-items: start;
     grid-template-columns: 1fr;
-  }
-
-  .load {
-    white-space: normal;
-  }
-
-  .coursework-list ul {
-    columns: 1;
   }
 }
 
@@ -705,25 +576,3 @@ code {
   }
 }
 
-.teaching-row {
-  background: rgba(255, 253, 248, 0.68);
-  border: 1px solid rgba(220, 202, 184, 0.84);
-  border-radius: 8px;
-  padding: 18px 20px;
-}
-
-.teaching-row .course {
-  font-size: 1.05rem;
-  margin: 0 0 8px;
-}
-
-.term-list {
-  color: var(--muted);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.term-list li {
-  padding: 2px 0;
-}

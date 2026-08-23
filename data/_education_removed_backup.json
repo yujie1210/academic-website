@@ -1,0 +1,55 @@
+[
+  {
+    "title": "PhD in Economics",
+    "place": "Nanyang Technological University, Singapore",
+    "period": "Aug 2024 - Aug 2028 expected",
+    "details": [
+      {
+        "label": "Supervisor",
+        "value": "Associate Professor Wang Wenjie"
+      },
+      {
+        "label": "Co-supervisor",
+        "value": "Professor Yohanes Eko Riyanto"
+      },
+      {
+        "label": "Service",
+        "value": "Subject Representative (Economics), 2026-present; Graduate Student Committee sub-committee member, 2025-2026"
+      }
+    ]
+  },
+  {
+    "title": "MPhil in Economics",
+    "place": "University of Cambridge, United Kingdom",
+    "period": "Sep 2023 - Jul 2024",
+    "details": [
+      {
+        "label": "College",
+        "value": "St Catharine's College"
+      },
+      {
+        "label": "Coursework paper",
+        "value": "Inequality in Nutrition: A Quantitative Analysis"
+      }
+    ]
+  },
+  {
+    "title": "BSc (Hons) Economics",
+    "place": "University of Nottingham Ningbo China",
+    "period": "Sep 2019 - Jul 2023",
+    "details": [
+      {
+        "label": "Honours",
+        "value": "First Class Distinction with Honours"
+      },
+      {
+        "label": "Dissertation",
+        "value": "Is There Discrimination in U.S. Criminal Law Sentencing? A Quantitative Examination Based on Non-linear Oaxaca Decomposition"
+      },
+      {
+        "label": "Supervisor",
+        "value": "Chair Professor Zhuo (Adam) Chen"
+      }
+    ]
+  }
+]

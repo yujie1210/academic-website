@@ -9,8 +9,8 @@
     "linkedin": "LinkedIn",
     "linkedinHref": "https://www.linkedin.com/in/yujiefan2000",
     "cv": "assets/Yujie-Fan-CV.pdf",
-    "bio": "I am a PhD candidate in Economics at Nanyang Technological University, supervised by Associate Professor Wang Wenjie and co-supervised by Professor Yohanes Eko Riyanto. My research interests sit at the intersection of experimental economics, machine learning applications, and human-AI interaction, with ongoing work on matching in two-sided markets and human-AI interaction in teams. I am also actively involved in undergraduate teaching in economics and econometrics.",
-    "bioHtml": "I am a PhD candidate in Economics at Nanyang Technological University, supervised by <a href=\"https://sites.google.com/site/wenjiemetrics/home\" target=\"_blank\" rel=\"noopener\">Associate Professor Wang Wenjie</a> and co-supervised by <a href=\"https://eko-ntu.github.io/\" target=\"_blank\" rel=\"noopener\">Professor Yohanes Eko Riyanto</a>. My research interests sit at the intersection of experimental economics, machine learning applications, and human-AI interaction, with ongoing work on matching in two-sided markets and human-AI interaction in teams. I am also actively involved in undergraduate teaching in economics and econometrics."
+    "bio": "Yujie Fan (Nichole) is a PhD candidate in Economics at Nanyang Technological University, supervised by Associate Professor Wang Wenjie and co-supervised by Professor Yohanes Eko Riyanto. Her research lies at the intersection of experimental economics, human-AI interaction, and applied machine learning. She studies how people incorporate algorithmic advice into their own judgment, when teams succeed in catching errors that individuals accept, and how large language models behave as strategic agents in matching markets. Her work combines laboratory experiments with machine-learning methods used as measurement tools. Prior to joining NTU, she received an MPhil in Economics from the University of Cambridge and a BSc (Hons) in Economics with First Class Distinction from the University of Nottingham Ningbo China. She teaches undergraduate tutorials in economics and econometrics at NTU.",
+    "bioHtml": "Yujie Fan (Nichole) is a PhD candidate in Economics at Nanyang Technological University, supervised by <a href=\"https://sites.google.com/site/wenjiemetrics/home\" target=\"_blank\" rel=\"noopener\">Associate Professor Wang Wenjie</a> and co-supervised by <a href=\"https://eko-ntu.github.io/\" target=\"_blank\" rel=\"noopener\">Professor Yohanes Eko Riyanto</a>. Her research lies at the intersection of experimental economics, human-AI interaction, and applied machine learning. She studies how people incorporate algorithmic advice into their own judgment, when teams succeed in catching errors that individuals accept, and how large language models behave as strategic agents in matching markets. Her work combines laboratory experiments with machine-learning methods used as measurement tools. Prior to joining NTU, she received an MPhil in Economics from the University of Cambridge and a BSc (Hons) in Economics with First Class Distinction from the University of Nottingham Ningbo China. She teaches undergraduate tutorials in economics and econometrics at NTU."
   },
   "interests": [
     {
@@ -36,28 +36,6 @@
       "status": "Ongoing"
     }
   ],
-  "teaching": [
-    {
-      "course": "HE5091 Principle of Economics",
-      "terms": [
-        "2024-25 S2 — 4 tutorial groups x 12 weeks",
-        "2025-26 S2 — 6 tutorial groups x 12 weeks"
-      ]
-    },
-    {
-      "course": "HE1001 Microeconomics",
-      "terms": [
-        "2025-26 S1 — 3 tutorial groups x 12 weeks"
-      ]
-    },
-    {
-      "course": "HE2003 Econometrics I",
-      "terms": [
-        "2025-26 S1 — 3 tutorial groups x 12 weeks",
-        "2026-27 S1 — 4 tutorial groups x 12 weeks"
-      ]
-    }
-  ],
   "publications": [
     {
       "title": "Health Inequality and Health Types: Evidence from China",
@@ -79,80 +57,6 @@
       "location": "Sun Yat-sen University, Guangzhou, China",
       "date": "2025",
       "link": "https://www.china-ces.org/Conferences/ConferenceDefault.aspx?ID=3059"
-    }
-  ],
-  "education": [
-    {
-      "title": "PhD in Economics",
-      "place": "Nanyang Technological University, Singapore",
-      "period": "Aug 2024 - Aug 2028 expected",
-      "details": [
-        {
-          "label": "Supervisor",
-          "value": "Associate Professor Wang Wenjie"
-        },
-        {
-          "label": "Co-supervisor",
-          "value": "Professor Yohanes Eko Riyanto"
-        },
-        {
-          "label": "Service",
-          "value": "Subject Representative (Economics), 2026-present; Graduate Student Committee sub-committee member, 2025-2026"
-        }
-      ]
-    },
-    {
-      "title": "MPhil in Economics",
-      "place": "University of Cambridge, United Kingdom",
-      "period": "Sep 2023 - Jul 2024",
-      "details": [
-        {
-          "label": "College",
-          "value": "St Catharine's College"
-        },
-        {
-          "label": "Coursework paper",
-          "value": "Inequality in Nutrition: A Quantitative Analysis"
-        }
-      ],
-      "tags": [
-        "Econometrics",
-        "Microeconomics",
-        "Macroeconomics",
-        "Development Economics",
-        "Industrial Organization",
-        "International Trade",
-        "Applied Econometrics"
-      ]
-    },
-    {
-      "title": "BSc (Hons) Economics",
-      "place": "University of Nottingham Ningbo China",
-      "period": "Sep 2019 - Jul 2023",
-      "details": [
-        {
-          "label": "Honours",
-          "value": "First Class Distinction with Honours"
-        },
-        {
-          "label": "Dissertation",
-          "value": "Is There Discrimination in U.S. Criminal Law Sentencing? A Quantitative Examination Based on Non-linear Oaxaca Decomposition"
-        },
-        {
-          "label": "Supervisor",
-          "value": "Chair Professor Zhuo (Adam) Chen"
-        }
-      ],
-      "tags": [
-        "Econometrics II",
-        "Microeconometrics Methods",
-        "Advanced Macroeconomics",
-        "Topics in Time Series",
-        "Numerical Methods",
-        "Intermediate Mathematical Economics",
-        "International Trade",
-        "Advanced Health Economics"
-      ]
     }
   ],
   "experience": [
