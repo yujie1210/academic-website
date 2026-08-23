@@ -268,21 +268,42 @@ code {
 }
 
 .abstract-details {
-  border-top: 1px solid rgba(220, 202, 184, 0.78);
-  margin-top: 16px;
-  padding-top: 14px;
+  border-top: 1px solid rgba(220, 202, 184, 0.6);
+  margin-top: 12px;
+  padding-top: 10px;
 }
 
-.abstract-details > span {
+.abstract-details summary {
   color: var(--muted);
-  display: block;
+  cursor: pointer;
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.08em;
+  list-style: none;
   text-transform: uppercase;
+  user-select: none;
+}
+
+.abstract-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.abstract-details summary::after {
+  content: " +";
+  font-weight: 700;
+}
+
+.abstract-details[open] summary::after {
+  content: " −";
+}
+
+.abstract-details summary:hover {
+  color: var(--coffee);
 }
 
 .abstract-details p {
+  color: var(--muted);
+  margin: 10px 0 0;
   max-width: none;
 }
 

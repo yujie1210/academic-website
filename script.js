@@ -48,10 +48,10 @@ const renderResearch = (groups) => groups
         <article class="paper">
           <h4>${esc(item.title)}${item.coauthors ? `<span class="coauthors">, with ${esc(item.coauthors)}</span>` : ""}</h4>
           ${item.abstract ? `
-            <div class="abstract-details">
-              <span>Abstract</span>
+            <details class="abstract-details">
+              <summary>Abstract</summary>
               <p>${esc(item.abstract)}</p>
-            </div>
+            </details>
           ` : ""}
         </article>
       `).join("")}
