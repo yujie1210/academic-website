@@ -41,17 +41,10 @@ const renderInterests = (items) => items
   .join("");
 
 const renderProjects = (items) => items
-  .map((item, index) => `
+  .map((item) => `
     <article class="project-card">
-      <span class="project-index">${String(index + 1).padStart(2, "0")}</span>
       <h3>${esc(item.title)}</h3>
-      <span class="meta">${esc(item.status)}</span>
-      ${item.description ? `
-        <div class="project-abstract">
-          <span>Abstract</span>
-          <p>${esc(item.description)}</p>
-        </div>
-      ` : ""}
+      ${item.description ? `<p>${esc(item.description)}</p>` : ""}
     </article>
   `)
   .join("");
@@ -70,7 +63,7 @@ const renderPublications = (items) => {
     .map((item) => `
       <article class="publication-card">
         <h3>${esc(item.title)}</h3>
-        <span class="meta">${esc(item.authors)}</span>
+        ${item.coauthors ? `<p class="coauthors">with ${esc(item.coauthors)}</p>` : ""}
         ${item.venue ? `<p>${esc(item.venue)}</p>` : ""}
         ${item.abstract ? `
           <div class="abstract-details">
@@ -83,15 +76,29 @@ const renderPublications = (items) => {
     .join("");
 };
 
+// Grouped by year, newest first, listing conference names only. Falls back to
+// the older flat {title, location, date} shape.
 const renderConferences = (items) => items
-  .map((item) => `
-    <article class="conference-row">
-      <div>
-        <h3>${esc(item.title)}</h3>
-        <span class="meta">${esc(item.location)} · ${esc(item.date)}</span>
-      </div>
-    </article>
-  `)
+  .map((group) => {
+    if (group.items) {
+      return `
+        <article class="conference-year">
+          <span class="year">${esc(group.year)}</span>
+          <ul>
+            ${group.items.map((name) => `<li>${esc(name)}</li>`).join("")}
+          </ul>
+        </article>
+      `;
+    }
+    return `
+      <article class="conference-row">
+        <div>
+          <h3>${esc(group.title)}</h3>
+          <span class="meta">${esc(group.location)} · ${esc(group.date)}</span>
+        </div>
+      </article>
+    `;
+  })
   .join("");
 
 const renderLists = (data) => {
