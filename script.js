@@ -46,8 +46,7 @@ const renderResearch = (groups) => groups
       <h3 class="group-label">${esc(group.group)}</h3>
       ${group.items.map((item) => `
         <article class="paper">
-          <h4>${esc(item.title)}</h4>
-          ${item.coauthors ? `<p class="coauthors">with ${esc(item.coauthors)}</p>` : ""}
+          <h4>${esc(item.title)}${item.coauthors ? `<span class="coauthors">, with ${esc(item.coauthors)}</span>` : ""}</h4>
           ${item.abstract ? `
             <div class="abstract-details">
               <span>Abstract</span>
