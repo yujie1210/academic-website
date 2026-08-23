@@ -102,14 +102,14 @@ a {
   min-height: calc(100vh - 68px);
   position: relative;
   display: grid;
-  align-items: end;
+  align-items: center;
   overflow: hidden;
   isolation: isolate;
 }
 
 .hero-media {
   background:
-    linear-gradient(90deg, rgba(36, 26, 20, 0.78), rgba(36, 26, 20, 0.46) 42%, rgba(36, 26, 20, 0.06)),
+    linear-gradient(270deg, rgba(36, 26, 20, 0.78), rgba(36, 26, 20, 0.46) 42%, rgba(36, 26, 20, 0.06)),
     url("assets/hero-academic.png") center / cover;
   inset: 0;
   position: absolute;
@@ -131,15 +131,17 @@ a {
   align-items: center;
   display: grid;
   gap: clamp(30px, 5vw, 64px);
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  grid-template-columns: minmax(260px, 380px) minmax(0, 1fr);
   margin: 0 auto;
   max-width: 1180px;
-  padding: clamp(90px, 14vh, 160px) clamp(22px, 6vw, 90px) clamp(100px, 18vh, 160px);
+  padding: clamp(60px, 9vh, 110px) clamp(22px, 6vw, 90px) clamp(60px, 9vh, 110px);
   width: 100%;
 }
 
 .hero-content {
   color: var(--white);
+  grid-column: 2;
+  grid-row: 1;
   max-width: 820px;
 }
 
@@ -148,11 +150,13 @@ a {
   border: 1px solid rgba(244, 216, 191, 0.72);
   border-radius: 8px;
   box-shadow: 0 24px 70px rgba(28, 18, 12, 0.28);
-  justify-self: end;
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
   margin: 0;
   overflow: hidden;
   padding: 8px;
-  width: min(100%, 300px);
+  width: min(100%, 380px);
 }
 
 .hero-portrait img {
@@ -492,9 +496,15 @@ code {
     padding-right: 22px;
   }
 
+  .hero-content,
+  .hero-portrait {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
   .hero-portrait {
     justify-self: start;
-    max-width: 220px;
+    max-width: 240px;
     order: -1;
   }
 
