@@ -219,12 +219,6 @@ h3 {
   text-underline-offset: 4px;
 }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 32px;
-}
 
 .button {
   align-items: center;
@@ -553,10 +547,6 @@ code {
     padding-right: 20px;
   }
 
-  .hero-actions {
-    align-items: stretch;
-    flex-direction: column;
-  }
 
   .button {
     justify-content: center;
@@ -643,4 +633,19 @@ code {
   font-weight: 600;
   line-height: 1.35;
   margin: 0;
+}
+
+.cv-line {
+  margin: 0;
+}
+
+.cv-link {
+  border-bottom: 1px solid var(--line);
+  color: var(--coffee);
+  font-weight: 600;
+  padding-bottom: 2px;
+}
+
+.cv-link:hover {
+  border-bottom-color: var(--coffee);
 }

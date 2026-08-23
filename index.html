@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260823p">
+    <link rel="stylesheet" href="styles.css?v=20260823q">
   </head>
   <body>
     <header class="site-header" aria-label="Site header">
@@ -29,9 +29,11 @@
         <span></span>
       </button>
       <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
         <a href="#research">Research</a>
         <a href="#conferences">Conferences</a>
         <a href="#contact">Contact</a>
+        <a href="#cv">CV</a>
       </nav>
     </header>
 
@@ -49,11 +51,6 @@
           <div class="hero-content">
             <h1 class="sr-only" data-field="person.name">Yujie Fan (Nichole)</h1>
             <p class="intro" data-rich-field="person.bioHtml">Yujie Fan (Nichole) is a PhD candidate in Economics at Nanyang Technological University, supervised by <a href="https://sites.google.com/site/wenjiemetrics/home" target="_blank" rel="noopener">Associate Professor Wang Wenjie</a> and co-supervised by <a href="https://eko-ntu.github.io/" target="_blank" rel="noopener">Professor Yohanes Eko Riyanto</a>. Her research lies at the intersection of experimental economics, human-AI interaction, and applied machine learning.<br><br>Prior to joining NTU, she received an MPhil in Economics from the University of Cambridge and a BSc (Hons) in Economics with First Class Distinction from the University of Nottingham Ningbo China.</p>
-            
-            <div class="hero-actions">
-              <a class="button primary" href="#research">View research</a>
-              <a class="button secondary" data-field-href="person.cv" href="assets/Yujie-Fan-CV.pdf">Download CV</a>
-            </div>
           </div>
           <figure class="hero-portrait">
             <img src="assets/yujie-fan-portrait.jpg" alt="Portrait of Yujie Fan">
@@ -84,6 +81,15 @@
           <span data-field="person.location"></span>
         </div>
       </section>
+
+      <section class="section" id="cv">
+        <div class="section-heading">
+          <h2>CV</h2>
+        </div>
+        <p class="cv-line">
+          <a class="cv-link" data-field-href="person.cv" href="assets/Yujie-Fan-CV.pdf">Download curriculum vitae (PDF)</a>
+        </p>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -91,6 +97,6 @@
       <span>Last updated August 2026.</span>
     </footer>
 
-    <script src="script.js?v=20260823p"></script>
+    <script src="script.js?v=20260823q"></script>
   </body>
 </html>
