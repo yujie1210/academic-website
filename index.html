@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260823m">
+    <link rel="stylesheet" href="styles.css?v=20260823o">
   </head>
   <body>
     <header class="site-header" aria-label="Site header">
@@ -30,7 +30,6 @@
       </button>
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
         <a href="#conferences">Conferences</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -61,22 +60,11 @@
           </figure>
         </div>
       </section>
-
-      <section class="section research-section" id="research">
+      <section class="section" id="research">
         <div class="section-heading">
           <h2>Research</h2>
         </div>
-        <div class="research-panel emphasized">
-          <h3>Research Projects</h3>
-          <div class="project-list" data-list="projects"></div>
-        </div>
-      </section>
-
-      <section class="section" id="publications">
-        <div class="section-heading">
-          <h2>Publications and Working Papers</h2>
-        </div>
-        <div class="publication-list" data-list="publications"></div>
+        <div data-list="research"></div>
       </section>
 
       <section class="section" id="conferences">
@@ -94,7 +82,6 @@
           <a data-field-href="person.emailHref" data-field="person.email"></a>
           <a data-field-href="person.linkedinHref" data-field="person.linkedin"></a>
           <span data-field="person.location"></span>
-          <a data-field-href="person.cv" href="assets/Yujie-Fan-CV.pdf">Curriculum Vitae</a>
         </div>
       </section>
     </main>
@@ -104,6 +91,6 @@
       <span>Last updated August 2026.</span>
     </footer>
 
-    <script src="script.js?v=20260823m"></script>
+    <script src="script.js?v=20260823o"></script>
   </body>
 </html>

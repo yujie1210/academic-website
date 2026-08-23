@@ -609,3 +609,37 @@ code {
   font-size: 0.94rem;
   margin: 4px 0 0;
 }
+
+.research-group + .research-group {
+  margin-top: 40px;
+}
+
+.group-label {
+  border-bottom: 1px solid rgba(220, 202, 184, 0.9);
+  color: var(--muted);
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin: 0 0 4px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.paper {
+  border-bottom: 1px solid rgba(220, 202, 184, 0.5);
+  padding: 18px 0;
+}
+
+.paper:last-child {
+  border-bottom: 0;
+}
+
+.paper h4 {
+  color: var(--ink);
+  font-family: Lora, Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0;
+}

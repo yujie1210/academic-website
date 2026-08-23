@@ -40,41 +40,25 @@ const renderInterests = (items) => items
   `)
   .join("");
 
-const renderProjects = (items) => items
-  .map((item) => `
-    <article class="project-card">
-      <h3>${esc(item.title)}</h3>
-      ${item.description ? `<p>${esc(item.description)}</p>` : ""}
-    </article>
+const renderResearch = (groups) => groups
+  .map((group) => `
+    <section class="research-group">
+      <h3 class="group-label">${esc(group.group)}</h3>
+      ${group.items.map((item) => `
+        <article class="paper">
+          <h4>${esc(item.title)}</h4>
+          ${item.coauthors ? `<p class="coauthors">with ${esc(item.coauthors)}</p>` : ""}
+          ${item.abstract ? `
+            <div class="abstract-details">
+              <span>Abstract</span>
+              <p>${esc(item.abstract)}</p>
+            </div>
+          ` : ""}
+        </article>
+      `).join("")}
+    </section>
   `)
   .join("");
-
-const renderPublications = (items) => {
-  if (!items.length) {
-    return `
-      <article class="publication-card">
-        <h3>Research outputs coming soon</h3>
-        <p>Formal titles, author order, abstracts, and links can be added as the projects mature.</p>
-      </article>
-    `;
-  }
-
-  return items
-    .map((item) => `
-      <article class="publication-card">
-        <h3>${esc(item.title)}</h3>
-        ${item.coauthors ? `<p class="coauthors">with ${esc(item.coauthors)}</p>` : ""}
-        ${item.venue ? `<p>${esc(item.venue)}</p>` : ""}
-        ${item.abstract ? `
-          <div class="abstract-details">
-            <span>Abstract</span>
-            <p>${esc(item.abstract)}</p>
-          </div>
-        ` : ""}
-      </article>
-    `)
-    .join("");
-};
 
 // Grouped by year, newest first, listing conference names only. Falls back to
 // the older flat {title, location, date} shape.
@@ -104,8 +88,7 @@ const renderConferences = (items) => items
 const renderLists = (data) => {
   const renderers = {
     interests: renderInterests,
-    projects: renderProjects,
-    publications: renderPublications,
+    research: renderResearch,
     conferences: renderConferences
   };
 
