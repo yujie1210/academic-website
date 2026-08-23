@@ -40,21 +40,25 @@ const renderInterests = (items) => items
   `)
   .join("");
 
+// Papers with an abstract become a <details> so the title itself is the toggle.
+// Papers without one stay a plain <article> -- otherwise they would look
+// clickable but expand to nothing.
 const renderResearch = (groups) => groups
   .map((group) => `
     <section class="research-group">
       <h3 class="group-label">${esc(group.group)}</h3>
-      ${group.items.map((item) => `
-        <article class="paper">
-          <h4>${esc(item.title)}${item.coauthors ? `<span class="coauthors">, with ${esc(item.coauthors)}</span>` : ""}</h4>
-          ${item.abstract ? `
-            <details class="abstract-details">
-              <summary>Abstract</summary>
-              <p>${esc(item.abstract)}</p>
-            </details>
-          ` : ""}
-        </article>
-      `).join("")}
+      ${group.items.map((item) => {
+        const heading = `${esc(item.title)}${item.coauthors ? `<span class="coauthors">, with ${esc(item.coauthors)}</span>` : ""}`;
+        if (!item.abstract) {
+          return `<article class="paper"><h4>${heading}</h4></article>`;
+        }
+        return `
+          <details class="paper has-abstract">
+            <summary><h4>${heading}</h4></summary>
+            <p class="abstract-body">${esc(item.abstract)}</p>
+          </details>
+        `;
+      }).join("")}
     </section>
   `)
   .join("");

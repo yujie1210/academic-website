@@ -267,46 +267,6 @@ code {
   margin: 10px 0 0;
 }
 
-.abstract-details {
-  border-top: 1px solid rgba(220, 202, 184, 0.6);
-  margin-top: 12px;
-  padding-top: 10px;
-}
-
-.abstract-details summary {
-  color: var(--muted);
-  cursor: pointer;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  list-style: none;
-  text-transform: uppercase;
-  user-select: none;
-}
-
-.abstract-details summary::-webkit-details-marker {
-  display: none;
-}
-
-.abstract-details summary::after {
-  content: " +";
-  font-weight: 700;
-}
-
-.abstract-details[open] summary::after {
-  content: " −";
-}
-
-.abstract-details summary:hover {
-  color: var(--coffee);
-}
-
-.abstract-details p {
-  color: var(--muted);
-  margin: 10px 0 0;
-  max-width: none;
-}
-
 .research-section {
   max-width: 1180px;
 }
@@ -678,4 +638,44 @@ code {
 .contact-page .contact-card {
   gap: 10px;
   max-width: 420px;
+}
+
+/* The paper title itself is the disclosure control, so the marker sits at the
+   end of the title row rather than on a separate "Abstract" line. */
+.paper.has-abstract > summary {
+  cursor: pointer;
+  list-style: none;
+  padding-right: 22px;
+  position: relative;
+}
+
+.paper.has-abstract > summary::-webkit-details-marker {
+  display: none;
+}
+
+.paper.has-abstract > summary::after {
+  color: var(--muted);
+  content: "+";
+  font-family: Inter, system-ui, sans-serif;
+  position: absolute;
+  right: 2px;
+  top: 1px;
+}
+
+.paper.has-abstract[open] > summary::after {
+  content: "−";
+}
+
+.paper.has-abstract > summary:hover h4,
+.paper.has-abstract > summary:hover::after {
+  color: var(--coffee);
+}
+
+.paper.has-abstract > summary h4 {
+  display: inline;
+}
+
+.abstract-body {
+  color: var(--muted);
+  margin: 12px 0 0;
 }
