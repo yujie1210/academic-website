@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 SITE = "https://yujie1210.github.io/academic-website"
-VERSION = "20260823t"
+VERSION = "20260823u"
 
 NAV = [
     ("index.html", "Home"),
